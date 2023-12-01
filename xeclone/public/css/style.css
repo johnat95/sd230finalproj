@@ -1,0 +1,167 @@
+html, body {display: block; height: 100%; width: 100%; margin: 0; }
+
+.viewContainer{
+    display: block;
+
+    height: inherit;
+    width: inherit;
+
+}
+.paragraphDisplay{
+    margin: auto;
+    text-align: center;
+    color: black;
+    height: 80%;
+    width: 80%;
+}
+.header{
+    display: block;
+    background-color: #1E3394;
+    height: 40%;
+    margin-bottom: 5%;
+}
+
+.lower{
+
+    background-color: white;
+    height: 60%;
+}
+
+
+.formContainer{
+    background-color:lightgrey;
+}
+
+.row-display{
+    display: flex;
+    flex-direction: row;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    width: inherit;
+    height: 5%;
+    width: 100%;
+    padding-top: 1em;
+}
+
+.logo{
+    font-size: 2em;
+    padding-left: 1.2em;
+    color:white;
+}
+
+.navbar-segment:first-of-type{
+    padding-left: 1em;
+}
+.navbar-segment:first-of-type{
+    padding-right: 1em;
+}
+
+.navbarItem{
+    color: white;
+    padding: 1em;
+}
+
+.formBox{
+    border: 1px solid;
+    width: 60%;
+    background-color: white;
+    position: absolute;
+    top: 20%;
+    right: 20%;
+    height: 40%;
+}
+
+.tabItemSelected:first-of-type{
+    background-color: white;
+    border-right: 1px solid black;
+
+}
+.tabItemSelected:last-of-type{
+    background-color: white;
+    border-left: 1px solid black;
+
+}
+.tabItem{
+    background-color: #ECEFF4;
+    border: 1px solid black;
+    padding: 1em;
+    margin: 0;
+
+}
+.tabItemSelected{
+    background-color: #FFFFFF;
+    border: 1px solid black;
+    padding: 1em;
+    margin: 0;
+
+}
+.convert-button{
+    display: block;
+    position: relative;
+
+}
+
+.darkButton{
+    display: block;
+    background-color: #1E3394;
+    height: 15%;
+    width: 30%;
+    color: white;
+    border-radius: 3%;
+    padding: 1em;
+}
+
+.lightButton{
+    display: block;
+    background-color: #3D86FF;
+    height: 15%;
+    width: 30%;
+    color: white;
+    border-radius: .8em;
+    padding: 1em;
+    justify-content: center;
+}
+
+.dropdown{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+}
+
+.dropdown-item{
+    display: block;
+    height: 10%;
+    width: 30%;
+
+}
+
+a{
+    color: white;
+    text-decoration: none;
+
+}
+
+a:visited{
+    color: white;
+    text-decoration: none;
+}
+
+footer{
+    display: inline;
+    position:absolute;
+    width:100%;
+    bottom:0px;
+    height: 20%;
+    background-color: #1E3394;
+    color:white;
+
+}
+
+footer p{
+    display: block;
+    text-align: center;
+
+}
+
