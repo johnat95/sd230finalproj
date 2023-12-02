@@ -24,9 +24,9 @@ app.get('/currencyConverter', (req, res) => {
   res.render('currencyConverter')
 })
 
-
-
-
+app.all('*', (req, res) => {
+    res.render('404')
+  });
 
 
 app.listen(3000, () => console.log('listening on port 3000.'));

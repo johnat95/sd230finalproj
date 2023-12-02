@@ -22,8 +22,7 @@ app.use('/', serveIndex('public'));
 app.use('/info', express.static('public/info'));
 app.use('/info', serveIndex('public/info'));
 
-app.all('*', express.static('public'));
-app.all('*', serveIndex('public/error'));
+
 
 app.all('*', (req, res) => {
     res.sendFile(path.join(__dirname, 'public','/404.html'));
@@ -31,6 +30,6 @@ app.all('*', (req, res) => {
 
 
 
-app.listen(3000, () => console.log('Example app is listening on port 3000.'));
+app.listen(3001, () => console.log('Example app is listening on port 3000.'));
 
 
