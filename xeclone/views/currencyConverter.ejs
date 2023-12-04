@@ -1,22 +1,32 @@
 
-
-    </div>
-
     <div class="formBox">
       <div class="tabNav">
 
 
         <div class="formBoxDisplay">
-          <form>
-            <input id type="text">
+          <!-- FROM: https://www.w3schools.com/howto/howto_js_tabs.asp -->
+            <!-- Tab links -->
+             <div class="tab">
+              <button id="0" class="tablinks" >London</button>
+              <button id="1" class="tablinks" >Paris</button>
+              <button id="2" class="tablinks" >Tokyo</button>
+            </div>
 
+            <!-- Tab content -->
+            <div id="first" class="tabcontent active">
+              <h3>London</h3>
+              <p>London is the capital city of England.</p>
+            </div>
 
-              <div id="left-dropdown"class="dropdown"></div>
+            <div id="second" class="tabcontent">
+              <h3>Paris</h3>
+              <p>Paris is the capital of France.</p>
+            </div>
 
-              <div id="right-dropdown" class="dropdown"></div>
-
-
-          <button type="submit">Convert</button>
+            <div id="third" class="tabcontent">
+              <h3>Tokyo</h3>
+              <p>Tokyo is the capital of Japan.</p>
+            </div>
         </div>
       </div>
 
@@ -35,5 +45,6 @@
       </div>
 
     </div>
+    <script src= "scripts/currencyConversion.js" nonce="1" type="text/javascript"></script>
 
 
