@@ -52,6 +52,9 @@ app.get('/about', (req, res) => {
 app.get('/currencyConverter', (req, res) => {
   res.render('currencyConverter')
 })
+app.get('/currencyCharts', (req, res) => {
+  res.render('currencyCharts')
+})
 
 app.all('*', (req, res) => {
   logger.warn("404:"+req.url)

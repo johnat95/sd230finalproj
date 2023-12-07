@@ -1,0 +1,17 @@
+body{
+    background-color: black;
+}
+.display{
+    margin: auto;
+    text-align: center;
+    color: black;
+    height: 80%;
+    width: 80%;
+    background-color: red;
+}
+.redButton{
+    display: block;
+    color: black;
+    background-color: red;
+    margin: auto auto;
+}

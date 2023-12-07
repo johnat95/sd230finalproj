@@ -77,19 +77,25 @@ function populateDropDowns(){
 
 }
 
+function populateLeftTable(){
+  table = document.getElementById('left-table')
+  table.appendChild('tr')
+
+}
+
 //add listeners to id's 1-3
 const addEventListeners = function(){
   for (let i = 0; i < 3; i++) {
-    if(i >=1 && i <=3){
+
       console.log('done')
       document.getElementById(String(i)).addEventListener('click', openTab)
-    }
+
 
   }
 }
 
 const openTab = function(event) {
-  console.log('1')
+
   tab = tabOptions[event.target.id]
   // Declare all variables
   var i, tabcontent, tablinks;
@@ -107,15 +113,12 @@ const openTab = function(event) {
   }
 
   // Show the current tab, and add an "active" class to the button that opened the tab
-  document.getElementById(cityName).style.display = "block";
-  evt.currentTarget.className += " active";
+  document.getElementById(tab).style.display = "block";
+  event.target.className += " active";
 }
 
-window.onLoad = () =>{
-  console.log('ran')
-  populateDropDowns()
-  addEventListeners()
-}
+
+addEventListeners()
 
 
 

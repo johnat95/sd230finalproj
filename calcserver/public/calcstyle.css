@@ -5,8 +5,8 @@ html{
 }
 
 body{
-    height: 100%;
-    width: 100%;
+    height: inherit;
+    width: inherit;
     background-color: white;
 }
 
@@ -43,6 +43,8 @@ main{
     background-color: #3C2382;
 
 }
+
+
 
 #calc-display{
   font-size: 30px;
@@ -87,8 +89,40 @@ main{
     padding: 0em;
     color:#3C2382;;
 }
+.paragraphDisplay{
+    margin: auto;
+    text-align: center;
+    color: black;
+    height: 80%;
+    width: 80%;
+}
 
 footer{
-    position: absolute;
+    display: block;
+    position:absolute;
+    width:100%;
+    bottom:0px;
+    height: 10%;
+    background-color: #C699FF;
+    color:white;
+    margin-top: 1em;
 
+}
+
+footer a{
+    display: block;
+    text-align: center;
+    color:black;
+
+}
+
+a{
+    color:black;
+    text-decoration: none;
+
+}
+
+a:visited{
+    color:black;
+    text-decoration: none;
 }

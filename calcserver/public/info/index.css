@@ -1,0 +1,46 @@
+html{
+    display: block;
+
+    margin: auto;
+    height: 100%;
+    width: 100%;
+
+  background-image: linear-gradient(#FFFFFF, #D0D0D0);
+}
+.paragraphDisplay{
+
+    margin: auto;
+    text-align: center;
+    color: black;
+    height: 80%;
+    width: 80%;
+}
+footer{
+    display: block;
+    position:absolute;
+    width:100%;
+    bottom:0px;
+    height: 10%;
+    background-color: #C699FF;
+    color:white;
+    margin-top: 1em;
+
+}
+
+footer a{
+    display: block;
+    text-align: center;
+    color:black;
+
+}
+
+a{
+    color:black;
+    text-decoration: none;
+
+}
+
+a:visited{
+    color:black;
+    text-decoration: none;
+}

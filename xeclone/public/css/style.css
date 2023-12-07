@@ -32,6 +32,10 @@ html, body {display: block; height: 100%; width: 100%; margin: 0; }
     background-color:lightgrey;
 }
 
+.center{
+    margin: 0 auto;
+}
+
 .row-display{
     display: flex;
     flex-direction: row;
@@ -103,6 +107,7 @@ html, body {display: block; height: 100%; width: 100%; margin: 0; }
 
 }
 
+
 .darkButton{
     display: block;
     background-color: #1E3394;
@@ -164,6 +169,38 @@ footer p{
     text-align: center;
 
 }
+
+.tableContainer{
+    height: inherit;
+    width: inherit;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.redButton{
+    color: black;
+    background-color: red;
+}
+tbody{
+    display: block;
+    height: 80%;
+    width: 80;
+    margin: 1em;
+    background-color: #1E3394;
+
+
+
+}
+
+.bottomBorder{
+    border-bottom: grey solid 1px;
+}
+
+
+
+
+
+
 /* FROM: https://www.w3schools.com/howto/howto_js_tabs.asp*/
  /* Style the tab */
  .tab {

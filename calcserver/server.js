@@ -7,13 +7,17 @@ const path = require('path');
 
 const app = express();
 
-app.use(helmet({
-  contentSecurityPolicy: {
-    directives: {
-      "script-src": ["'self'"],
+app.use(
+  helmet({
+    contentSecurityPolicy: {
+      directives: {
+        "script-src": ["'self'"],
+        "script-src-attr": "'unsafe-inline'",
+        "img-src": ["'self'","https://upload.wikimedia.org"],
+      },
     },
-  },
-}),)
+  }),
+);
 
 
 
@@ -47,6 +51,7 @@ app.use('/cattax', serveIndex('public/cattax'));
 
 app.all('*', (req, res) => {
     logger.warn("404 URL: "+req.url)
+    res.sendFile(path.join(__dirname, 'public','/404.css'));
     res.sendFile(path.join(__dirname, 'public','/404.html'));
   });
 
