@@ -59,29 +59,14 @@ const CURRENCY_CODE = {
   }
 
 
-function populateDropDowns(){
+function populateTables(){
 
-  lDrop = document.getElementById('left-dropdown')
-  rDrop = document.getElementById('right-dropdown')
+  leftNodes = document.getElementById('left-table').childNodes
 
-  codeKeys = Object.keys(CURRENCY_CODE)
-
-  codeKeys.forEach((e)=>{
-    label = document.createElement('label')
-    label.innerText = e + CURRENCY_CODE[e]
-    labal.classList.add("dropdown-item")
-    rDrop.appendChild(label)
-    lDrop.appendChild(label)
-  })
 
 
 }
 
-function populateLeftTable(){
-  table = document.getElementById('left-table')
-  table.appendChild('tr')
-
-}
 
 //add listeners to id's 1-3
 const addEventListeners = function(){
@@ -94,6 +79,7 @@ const addEventListeners = function(){
   }
 }
 
+//FROM: https://www.w3schools.com/howto/howto_js_tabs.asp
 const openTab = function(event) {
 
   tab = tabOptions[event.target.id]

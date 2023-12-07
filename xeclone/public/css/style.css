@@ -174,27 +174,40 @@ footer p{
     height: inherit;
     width: inherit;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
 }
 .redButton{
     color: black;
     background-color: red;
 }
-tbody{
-    display: block;
-    height: 80%;
-    width: 80;
-    margin: 1em;
-    background-color: #1E3394;
 
-
-
-}
 
 .bottomBorder{
     border-bottom: grey solid 1px;
 }
+table{
+    background-color: white;
+}
+
+td{
+    padding: .5em;
+
+}
+th:first{
+    padding-right: 5em;
+}
+tr.td:first{
+    padding: .75em;
+    padding-right: 5em;
+}
+
+tr{
+    border-bottom: grey;
+}
+
+
+
 
 
 
